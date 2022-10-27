@@ -1,0 +1,23 @@
+{
+  "name": "dicoogle",
+  "version": "1.0.0",
+  "description": "[![Java CI with Maven](https://github.com/bioinformatics-ua/dicoogle/actions/workflows/maven.yml/badge.svg)](https://github.com/bioinformatics-ua/dicoogle/actions/workflows/maven.yml)\r [![Build Webapp with Node.js](https://github.com/bioinformatics-ua/dicoogle/actions/workflows/node.yml/badge.svg)](https://github.com/bioinformatics-ua/dicoogle/actions/workflows/node.yml)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bioinformatics-ua/dicoogle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bioinformatics-ua/dicoogle/issues"
+  },
+  "homepage": "https://github.com/bioinformatics-ua/dicoogle#readme",
+  "dependencies": {
+    "build": "^0.1.4"
+  }
+}

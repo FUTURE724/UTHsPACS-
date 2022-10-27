@@ -248,7 +248,8 @@ public class DicomStorage extends StorageService {
 
         if (!permited) {
             // DebugManager.getSettings().debug("Client association NOT permited: " + as.getCallingAET() + "!");
-            LoggerFactory.getLogger(DicomStorage.class).warn("Client association with {} NOT permitted!", as.getCallingAET());
+            LoggerFactory.getLogger(DicomStorage.class).warn("Client association with {} NOT permitted!",
+                    as.getCallingAET());
             as.abort();
 
             return;

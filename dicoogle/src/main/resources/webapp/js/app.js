@@ -186,7 +186,7 @@ class App extends React.Component {
           />
           <img
             className="logo-image"
-            src="assets/logo-light-blue.png"
+            src="assets/UTH.PNG"
             id="webapp-logo-light"
           />
           <div className="pull-right">

@@ -57,7 +57,7 @@ const LoginView = createReactClass({
 
             <div>
               <h4 style={{ textAlign: "center" }}>
-                Improve your knowledge from your medical imaging repository.
+                <p> WELCOME TO THE UNIVERSITY TEACHING HOSPITALS PACS</p>
               </h4>
             </div>
 
@@ -107,10 +107,10 @@ const LoginView = createReactClass({
           {/*to fill the empty space between the login and footer*/}
           <div id="filler" />
 
-          <footer id="footer">
+          {/* <footer id="footer">
             <div style={{ width: "100%", textAlign: "center" }}>
               Community information and Learning Pack available on the{" "}
-              <a target="_new" href="http://www.dicoogle.com">
+             <a target="_new" href="http://www.dicoogle.com">
                 {" "}
                 the Dicoogle website
               </a>.{" "}
@@ -177,7 +177,7 @@ const LoginView = createReactClass({
                 </a>
               </div>
             </div>
-          </footer>
+          </footer>*/}
         </div>
       </div>
     );
