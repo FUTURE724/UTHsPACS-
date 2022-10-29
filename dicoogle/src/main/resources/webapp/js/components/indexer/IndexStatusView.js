@@ -81,22 +81,27 @@ const IndexStatusView = createReactClass({
     if (this.state.data.tasks.length === 0) {
       items = <div>No tasks</div>;
     } else {
-      items = this.state.data.tasks.sort((item1, item2) => {
-        // Sorts tasks from latest to first
-        return new Date(item2.taskTimeCreated).getTime() - new Date(item1.taskTimeCreated).getTime();
-      }).map(item => (
-        <TaskStatus
-          key={item.taskUid}
-          index={item.taskUid}
-          item={item}
-          onCloseStopClicked={this.onCloseStopClicked.bind(
-            this,
-            item.taskUid,
-            item.complete,
-            item.canceled
-          )}
-        />
-      ));
+      items = this.state.data.tasks
+        .sort((item1, item2) => {
+          // Sorts tasks from latest to first
+          return (
+            new Date(item2.taskTimeCreated).getTime() -
+            new Date(item1.taskTimeCreated).getTime()
+          );
+        })
+        .map(item => (
+          <TaskStatus
+            key={item.taskUid}
+            index={item.taskUid}
+            item={item}
+            onCloseStopClicked={this.onCloseStopClicked.bind(
+              this,
+              item.taskUid,
+              item.complete,
+              item.canceled
+            )}
+          />
+        ));
     }
 
     let providersList = this.state.providers.map(item => ({

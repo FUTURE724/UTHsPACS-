@@ -52,7 +52,7 @@ const PluginsView = createReactClass({
 
     if (data.data.length !== 0) {
       let plugins = {};
-      
+
       // apply this structure: plugins[query]: [...] ; plugins[storage]: [...] ; ...
       for (const p of data.data) {
         let type = p.type;

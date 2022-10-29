@@ -56,7 +56,7 @@ export default class ServiceForm extends React.Component {
       borderRadius: "50%",
       border: "1px solid #333",
       margin: "4px",
-      backgroundColor: this.props.running ? "#0a0" : "red",
+      backgroundColor: this.props.running ? "#0a0" : "red"
     };
   }
 

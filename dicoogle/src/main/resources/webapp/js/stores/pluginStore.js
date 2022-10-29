@@ -12,18 +12,21 @@ const PluginStore = Reflux.createStore({
   },
 
   onGet: function(type) {
-    Dicoogle.request(['plugins', type]).then((response) => {
+    Dicoogle.request(["plugins", type]).then(
+      response => {
         this._contents[type] = response.body.plugins;
         this.trigger({
           data: this._contents[type],
           success: true
         });
-    }, (error) => {
+      },
+      error => {
         this.trigger({
           success: false,
           status: error.body.status
         });
-    });
+      }
+    );
   },
 
   onSetAction: function(type, name, action) {

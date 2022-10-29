@@ -136,9 +136,8 @@ const SearchResult = createReactClass({
         key={plugin.name}
         className="btn btn_dicoogle dicoogle-webcore-result-batch-button"
         onClick={this.handleClickBatchPluginButton.bind(this, plugin)}
-      > 
-        <i className="fa fa-plug" />
-        {" "} {plugin.caption}
+      >
+        <i className="fa fa-plug" /> {plugin.caption}
       </button>
     ));
 
