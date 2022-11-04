@@ -60,8 +60,8 @@ public class ClientSettings {
         externalViewer = "";
         defaultServerHost = "localhost";
         defaultServerPort = 9014;
-        defaultUserName = "dicoogle";
-        defaultPassword = HashService.hashPassword("dicoogle");
+        defaultUserName = "uthspacs";
+        defaultPassword = HashService.hashPassword("uthspacs");
     }
 
     public void setExtV(String EV) {
